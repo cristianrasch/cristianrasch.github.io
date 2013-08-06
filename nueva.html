@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Nueva meetup</title>
+    <link href="stylesheets/all-3561126c.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/custom.modernizr-0e3e8b2c.js" type="text/javascript"></script>
+  </head>
+  <body class='nueva'>
+    <header class='row'>
+      <div class='small-12 columns'>
+        <div class='row'>
+          <div class='small-10 columns'>
+            <h2>Bievenido a meetup-ar</h2>
+          </div>
+          <div class='small-2 columns'>
+            <a class="button secondary radius login-btn" href="/nueva.html">Ingresar</a>
+          </div>
+        </div>
+        <hr class='sep'>
+      </div>
+    </header>
+    <div class='row'>
+      <div class='small-12 small-centered columns'>
+        <form class='custom'>
+          <fieldset>
+            <legend>Registrá tu meetup</legend>
+            <div class='row'>
+              <div class='small-6 columns'>
+                <div class='row'>
+                  <div class='small-3 columns'>
+                    <label class='inline' for='nombre'>Nombre</label>
+                  </div>
+                  <div class='small-9 columns'>
+                    <input placeholder='Meetup mensual de Ruby Argentina' type='text'>
+                  </div>
+                </div>
+              </div>
+              <div class='small-6 columns'>
+                <div class='row'>
+                  <div class='small-3 columns'>
+                    <label class='inline' for='lugar'>Lugar</label>
+                  </div>
+                  <div class='small-9 columns'>
+                    <textarea placeholder='La Maquitina, Niceto Vega 4736' rows='3'></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='small-6 columns'>
+                <div class='row'>
+                  <div class='small-3 columns'>
+                    <label class='inline' for='provincia_id'>Provincia</label>
+                  </div>
+                  <div class='small-9 columns'>
+                    <select name='provincia_id'>
+                      <option selected value='1'>Buenos Aires</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class='small-6 columns'>
+                <div class='row'>
+                  <div class='small-3 columns'>
+                    <label class='inline' for='ciudad_id'>Ciudad</label>
+                  </div>
+                  <div class='small-9 columns'>
+                    <select name='ciudad_id'>
+                      <option selected value='1'>Ramos Mejía</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='small-6 columns'>
+                <div class='row'>
+                  <div class='small-3 columns'>
+                    <label class='inline' for='frecuencia'>Frecuencia</label>
+                  </div>
+                  <div class='small-9 columns'>
+                    <label for='frecuencia'>
+                      <input id='frecuencia' name='frecuencia' style='display:none;' type='radio' value='semanal'>
+                      <span class='custom radio'>&nbsp;</span>
+                      Semanal
+                    </label>
+                    <label for='frecuencia'>
+                      <input id='frecuencia' name='frecuencia' style='display:none;' type='radio' value='bisemanal'>
+                      <span class='custom radio'>&nbsp;</span>
+                      Bi-semanal
+                    </label>
+                    <label for='frecuencia'>
+                      <input checked id='frecuencia' name='frecuencia' style='display:none;' type='radio' value='mensual'>
+                      <span class='custom radio'>&nbsp;</span>
+                      Mensual
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class='small-6 columns'>
+                <div class='row'>
+                  <div class='small-3 columns'>
+                    <label class='inline' for='fecha'>Próxima reunión</label>
+                  </div>
+                  <div class='small-9 columns'>
+                    <input class='datepicker' type='text'>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='row new-meetup-btn-group'>
+              <div class='small-4 small-centered columns'>
+                <ul class='button-group'>
+                  <li>
+                    <button class='button radius' type='submit'>Registrar</button>
+                  </li>
+                  <li><a class="button secondary radius" href="/">Volver</a></li>
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='small-12 columns'>
+        <footer class='alert-box radius' data-alert>
+          © 2013 <a class="white" href="http://wecode.io">wecode.io</a>. Todos los derechos reservados.
+        </footer>
+      </div>
+    </div>
+    <script src="javascripts/all-03700901.js" type="text/javascript"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+      $.datepicker.regional['es'];
+      $('.datepicker').datepicker({ dateFormat: 'dd/mm/yy' });
+    </script>
+  </body>
+</html>
